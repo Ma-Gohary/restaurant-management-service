@@ -8,11 +8,13 @@ import {UserRepository} from "./repositories/user.repository";
 import {UserService} from "./services/user.service";
 import {UserController} from "./controllers/user.controller";
 import {RestaurantModule} from "../restaurant/restaurant.module";
+import {UserTransformer} from "./transformers/user.transformer";
 
 @Module({
   controllers: [UserController],
   providers: [
     UserService,
+    UserTransformer,
     UserRepository,
   ],
   imports: [

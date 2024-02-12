@@ -10,10 +10,11 @@ import {Restaurant, RestaurantSchema} from "./entities/restaurant.entity";
 import {Cuisine, CuisineSchema} from "./entities/cuisine.entity";
 import {CuisineService} from "./services/cuisine.service";
 import {CuisineRepository} from "./repositories/cuisine.repository";
+import {RestaurantTransformer} from "./transformers/restaurant.transformer";
 
 @Module({
   controllers: [RestaurantController],
-  providers: [RestaurantService, CuisineService, RestaurantRepository, CuisineRepository],
+  providers: [RestaurantService, CuisineService, RestaurantTransformer, RestaurantRepository, CuisineRepository],
   imports: [
     CommonModule,
     ClsModule.register({
@@ -38,6 +39,7 @@ import {CuisineRepository} from "./repositories/cuisine.repository";
   exports: [
     RestaurantService,
     CuisineService,
+    RestaurantTransformer,
   ]
 })
 export class RestaurantModule {}
