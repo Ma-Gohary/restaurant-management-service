@@ -1,7 +1,6 @@
 import {Module} from "@nestjs/common";
 import {GenericErrorFilter} from "./filters/generic-error.filter";
 import {ClsModule} from "nestjs-cls";
-import {UserExtractorInterceptor} from "./interceptors/user-extractor.interceptor";
 
 @Module({
   imports: [
@@ -11,11 +10,9 @@ import {UserExtractorInterceptor} from "./interceptors/user-extractor.intercepto
   ],
   providers: [
     GenericErrorFilter,
-    UserExtractorInterceptor
   ],
   exports: [
     GenericErrorFilter,
-    UserExtractorInterceptor
   ],
 })
 export class CommonModule {}

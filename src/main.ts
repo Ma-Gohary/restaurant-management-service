@@ -5,7 +5,6 @@ import {GenericErrorFilter} from "./common/filters/generic-error.filter";
 import {DocumentBuilder, SwaggerModule} from "@nestjs/swagger";
 import {Config} from "./common/configs/config";
 import * as dotenv from "dotenv";
-import {UserExtractorInterceptor} from "./common/interceptors/user-extractor.interceptor";
 
 dotenv.config();
 
@@ -16,7 +15,6 @@ async function bootstrap(): Promise<void> {
   app.useGlobalFilters(
     new GenericErrorFilter()
   );
-  app.useGlobalInterceptors(new UserExtractorInterceptor());
   app.enableVersioning({
     defaultVersion: "1",
     type: VersioningType.URI,

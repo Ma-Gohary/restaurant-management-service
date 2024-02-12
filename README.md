@@ -40,6 +40,6 @@ To run the Pleny Nest.js application, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/Ma-Gohary/restaurant-management-service.git
 2. Install dependencies: `yarn install`
-3. Set up the environment variables: Configure `.env` file at the root of the project and provide the MongoDB connection URL.
+3. Set up the environment variables: Create a `.env` file at the root of the project and provide the MongoDB connection URL.
 4. Start the application: `yarn start`
 5. Access the API documentation: Open your browser and visit `http://localhost:{PORT}/restaurant-service/api/docs` to view the Swagger documentation.
