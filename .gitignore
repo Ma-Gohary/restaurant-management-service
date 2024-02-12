@@ -13,3 +13,5 @@ logs
 # IDEs and editors
 .idea/
 .project
+
+.env

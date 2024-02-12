@@ -1,12 +1,4 @@
-Sure! Here's an example README file for the Nest.js application task you described:
-
-# Pleny - Nest.js Software Engineer Technical Task
-
-Thank you for considering me for the Nest.js Software Engineer (Freelance) role with Pleny, Inc. In this task, I have developed a technical demo for Pleny, the next big social network for foodies. This README file provides an overview of the task requirements, features implemented, tech stack used, and instructions for running the application.
-
-## Task Overview
-
-The task aimed to evaluate my proficiency in using advanced Nest.js features, MongoDB with Mongoose, and implementing clean code architecture. The main features to implement were Restaurant Management and User Interaction.
+# Restaurant Management Service
 
 ## Features Implemented
 
@@ -51,13 +43,3 @@ To run the Pleny Nest.js application, follow these steps:
 3. Set up the environment variables: Configure `.env` file at the root of the project and provide the MongoDB connection URL.
 4. Start the application: `yarn start`
 5. Access the API documentation: Open your browser and visit `http://localhost:{PORT}/restaurant-service/api/docs` to view the Swagger documentation.
-
-## Contact
-
-If you have any clarifications or inquiries regarding the task or the application, please don't hesitate to reach out to us at careers@pleny.com. We're looking forward to seeing your innovative approach to solving this task and potentially welcoming you to the Pleny team.
-
-Best regards,
-The Pleny Team
-#TheNextBigSocialNetwork
-
-Feel free to customize this README file with any additional information or specific instructions related to your implementation.
